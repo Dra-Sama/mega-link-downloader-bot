@@ -16,9 +16,9 @@ if __name__ == "__main__" :
     # Creating essential directories, if they does not exists
     if not os.path.isdir(Config.DOWNLOAD_LOCATION):
         os.makedirs(Config.DOWNLOAD_LOCATION)
-    if not os.path.isdir(Config.ADMIN_LOCATION):
+    elif not os.path.isdir(Config.ADMIN_LOCATION):
         os.makedirs(Config.ADMIN_LOCATION)
-    if not os.path.isdir(Config.CREDENTIALS_LOCATION):
+    else not os.path.isdir(Config.CREDENTIALS_LOCATION):
         os.makedirs(Config.CREDENTIALS_LOCATION)        
     plugins = dict(
         root="plugins"
